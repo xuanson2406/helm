@@ -35,7 +35,7 @@ Create chart name and version as used by the chart label.
 Common labels
 */}}
 {{- define "v3-fail.labels" -}}
-helm.sh/chart: {{ include "v3-fail.chart" . }}
+github.com/xuanson2406/chart: {{ include "v3-fail.chart" . }}
 {{ include "v3-fail.selectorLabels" . }}
 {{- if .Chart.AppVersion }}
 app.kubernetes.io/version: {{ .Chart.AppVersion | quote }}

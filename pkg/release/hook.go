@@ -17,7 +17,7 @@ limitations under the License.
 package release
 
 import (
-	"helm.sh/helm/v3/pkg/time"
+	"github.com/xuanson2406/helm/v3/pkg/time"
 )
 
 // HookEvent specifies the hook event
@@ -51,13 +51,13 @@ const (
 func (x HookDeletePolicy) String() string { return string(x) }
 
 // HookAnnotation is the label name for a hook
-const HookAnnotation = "helm.sh/hook"
+const HookAnnotation = "github.com/xuanson2406/hook"
 
 // HookWeightAnnotation is the label name for a hook weight
-const HookWeightAnnotation = "helm.sh/hook-weight"
+const HookWeightAnnotation = "github.com/xuanson2406/hook-weight"
 
 // HookDeleteAnnotation is the label name for the delete policy for a hook
-const HookDeleteAnnotation = "helm.sh/hook-delete-policy"
+const HookDeleteAnnotation = "github.com/xuanson2406/hook-delete-policy"
 
 // Hook defines a hook object.
 type Hook struct {

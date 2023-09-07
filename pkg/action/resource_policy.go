@@ -19,8 +19,8 @@ package action
 import (
 	"strings"
 
-	"helm.sh/helm/v3/pkg/kube"
-	"helm.sh/helm/v3/pkg/releaseutil"
+	"github.com/xuanson2406/helm/v3/pkg/kube"
+	"github.com/xuanson2406/helm/v3/pkg/releaseutil"
 )
 
 func filterManifestsToKeep(manifests []releaseutil.Manifest) (keep, remaining []releaseutil.Manifest) {

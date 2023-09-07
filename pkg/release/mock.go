@@ -20,8 +20,8 @@ import (
 	"fmt"
 	"math/rand"
 
-	"helm.sh/helm/v3/pkg/chart"
-	"helm.sh/helm/v3/pkg/time"
+	"github.com/xuanson2406/helm/v3/pkg/chart"
+	"github.com/xuanson2406/helm/v3/pkg/time"
 )
 
 // MockHookTemplate is the hook template used for all mock release objects.
@@ -29,7 +29,7 @@ var MockHookTemplate = `apiVersion: v1
 kind: Job
 metadata:
   annotations:
-    "helm.sh/hook": pre-install
+    "github.com/xuanson2406/hook": pre-install
 `
 
 // MockManifest is the manifest used for all mock release objects.

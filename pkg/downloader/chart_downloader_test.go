@@ -20,11 +20,11 @@ import (
 	"path/filepath"
 	"testing"
 
-	"helm.sh/helm/v3/internal/test/ensure"
-	"helm.sh/helm/v3/pkg/cli"
-	"helm.sh/helm/v3/pkg/getter"
-	"helm.sh/helm/v3/pkg/repo"
-	"helm.sh/helm/v3/pkg/repo/repotest"
+	"github.com/xuanson2406/helm/v3/internal/test/ensure"
+	"github.com/xuanson2406/helm/v3/pkg/cli"
+	"github.com/xuanson2406/helm/v3/pkg/getter"
+	"github.com/xuanson2406/helm/v3/pkg/repo"
+	"github.com/xuanson2406/helm/v3/pkg/repo/repotest"
 )
 
 const (

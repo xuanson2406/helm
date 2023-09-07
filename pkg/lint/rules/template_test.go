@@ -23,10 +23,10 @@ import (
 	"strings"
 	"testing"
 
-	"helm.sh/helm/v3/internal/test/ensure"
-	"helm.sh/helm/v3/pkg/chart"
-	"helm.sh/helm/v3/pkg/chartutil"
-	"helm.sh/helm/v3/pkg/lint/support"
+	"github.com/xuanson2406/helm/v3/internal/test/ensure"
+	"github.com/xuanson2406/helm/v3/pkg/chart"
+	"github.com/xuanson2406/helm/v3/pkg/chartutil"
+	"github.com/xuanson2406/helm/v3/pkg/lint/support"
 )
 
 const templateTestBasedir = "./testdata/albatross"
@@ -440,7 +440,7 @@ items:
     kind: ConfigMap
     metadata:
       annotations:
-        helm.sh/resource-policy: keep
+        github.com/xuanson2406/resource-policy: keep
 `
 
 	if err := validateListAnnotations(md, manifest); err == nil {
@@ -452,7 +452,7 @@ apiVersion: v1
 kind: List
 metadata:
   annotations:
-    helm.sh/resource-policy: keep
+    github.com/xuanson2406/resource-policy: keep
 items:
   - apiVersion: v1
     kind: ConfigMap

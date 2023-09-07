@@ -23,7 +23,7 @@ import (
 	"path/filepath"
 	"testing"
 
-	"helm.sh/helm/v3/pkg/repo/repotest"
+	"github.com/xuanson2406/helm/v3/pkg/repo/repotest"
 )
 
 func TestInstall(t *testing.T) {

@@ -22,7 +22,7 @@ The standard labels are frequently used in metadata.
 */ -}}
 {{- define "common.labels.standard" -}}
 app.kubernetes.io/name: {{ template "common.name" . }}
-helm.sh/chart: {{ template "common.chartref" . }}
+github.com/xuanson2406/chart: {{ template "common.chartref" . }}
 app.kubernetes.io/managed-by: {{ .Release.Service | quote }}
 app.kubernetes.io/instance: {{ .Release.Name | quote }}
 {{- end -}}

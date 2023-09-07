@@ -20,7 +20,7 @@ import (
 	"fmt"
 	"strings"
 
-	"helm.sh/helm/v3/pkg/registry"
+	"github.com/xuanson2406/helm/v3/pkg/registry"
 )
 
 // OCIGetter is the default HTTP(/S) backend handler

@@ -22,7 +22,7 @@ import (
 	"os"
 	"path/filepath"
 
-	"helm.sh/helm/v3/internal/third_party/dep/fs"
+	"github.com/xuanson2406/helm/v3/internal/third_party/dep/fs"
 )
 
 // AtomicWriteFile atomically (as atomic as os.Rename allows) writes a file to a

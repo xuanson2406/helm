@@ -17,7 +17,7 @@ apiVersion: v1
 kind: Job
 metadata:
   annotations:
-    "helm.sh/hook": pre-install
+    "github.com/xuanson2406/hook": pre-install
 
 MANIFEST:
 apiVersion: v1

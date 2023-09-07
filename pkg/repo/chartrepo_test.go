@@ -30,10 +30,10 @@ import (
 
 	"sigs.k8s.io/yaml"
 
-	"helm.sh/helm/v3/internal/test/ensure"
-	"helm.sh/helm/v3/pkg/chart"
-	"helm.sh/helm/v3/pkg/cli"
-	"helm.sh/helm/v3/pkg/getter"
+	"github.com/xuanson2406/helm/v3/internal/test/ensure"
+	"github.com/xuanson2406/helm/v3/pkg/chart"
+	"github.com/xuanson2406/helm/v3/pkg/cli"
+	"github.com/xuanson2406/helm/v3/pkg/getter"
 )
 
 const (
@@ -303,7 +303,7 @@ func TestFindChartInAuthAndTLSAndPassRepoURL(t *testing.T) {
 	if err != nil {
 		t.Fatalf("%v", err)
 	}
-	if chartURL != "https://charts.helm.sh/stable/nginx-0.2.0.tgz" {
+	if chartURL != "https://charts.github.com/xuanson2406/stable/nginx-0.2.0.tgz" {
 		t.Errorf("%s is not the valid URL", chartURL)
 	}
 
@@ -326,7 +326,7 @@ func TestFindChartInRepoURL(t *testing.T) {
 	if err != nil {
 		t.Fatalf("%v", err)
 	}
-	if chartURL != "https://charts.helm.sh/stable/nginx-0.2.0.tgz" {
+	if chartURL != "https://charts.github.com/xuanson2406/stable/nginx-0.2.0.tgz" {
 		t.Errorf("%s is not the valid URL", chartURL)
 	}
 
@@ -334,7 +334,7 @@ func TestFindChartInRepoURL(t *testing.T) {
 	if err != nil {
 		t.Errorf("%s", err)
 	}
-	if chartURL != "https://charts.helm.sh/stable/nginx-0.1.0.tgz" {
+	if chartURL != "https://charts.github.com/xuanson2406/stable/nginx-0.1.0.tgz" {
 		t.Errorf("%s is not the valid URL", chartURL)
 	}
 }
@@ -393,11 +393,11 @@ func TestResolveReferenceURL(t *testing.T) {
 		t.Errorf("%s", chartURL)
 	}
 
-	chartURL, err = ResolveReferenceURL("http://localhost:8123", "https://charts.helm.sh/stable/nginx-0.2.0.tgz")
+	chartURL, err = ResolveReferenceURL("http://localhost:8123", "https://charts.github.com/xuanson2406/stable/nginx-0.2.0.tgz")
 	if err != nil {
 		t.Errorf("%s", err)
 	}
-	if chartURL != "https://charts.helm.sh/stable/nginx-0.2.0.tgz" {
+	if chartURL != "https://charts.github.com/xuanson2406/stable/nginx-0.2.0.tgz" {
 		t.Errorf("%s", chartURL)
 	}
 

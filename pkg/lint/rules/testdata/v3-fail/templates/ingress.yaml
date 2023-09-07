@@ -20,7 +20,7 @@ metadata:
     {{- include "v3-fail.labels" . | nindent 4 }}
   {{- with .Values.ingress.annotations }}
   annotations:
-    "helm.sh/hook": crd-install
+    "github.com/xuanson2406/hook": crd-install
     {{- toYaml . | nindent 4 }}
   {{- end }}
 spec:

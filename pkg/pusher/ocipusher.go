@@ -24,8 +24,8 @@ import (
 
 	"github.com/pkg/errors"
 
-	"helm.sh/helm/v3/pkg/chart/loader"
-	"helm.sh/helm/v3/pkg/registry"
+	"github.com/xuanson2406/helm/v3/pkg/chart/loader"
+	"github.com/xuanson2406/helm/v3/pkg/registry"
 )
 
 // OCIPusher is the default OCI backend handler

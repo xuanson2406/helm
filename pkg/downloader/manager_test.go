@@ -23,11 +23,11 @@ import (
 	"reflect"
 	"testing"
 
-	"helm.sh/helm/v3/pkg/chart"
-	"helm.sh/helm/v3/pkg/chart/loader"
-	"helm.sh/helm/v3/pkg/chartutil"
-	"helm.sh/helm/v3/pkg/getter"
-	"helm.sh/helm/v3/pkg/repo/repotest"
+	"github.com/xuanson2406/helm/v3/pkg/chart"
+	"github.com/xuanson2406/helm/v3/pkg/chart/loader"
+	"github.com/xuanson2406/helm/v3/pkg/chartutil"
+	"github.com/xuanson2406/helm/v3/pkg/getter"
+	"github.com/xuanson2406/helm/v3/pkg/repo/repotest"
 )
 
 func TestVersionEquals(t *testing.T) {
@@ -53,9 +53,9 @@ func TestNormalizeURL(t *testing.T) {
 	tests := []struct {
 		name, base, path, expect string
 	}{
-		{name: "basic URL", base: "https://example.com", path: "http://helm.sh/foo", expect: "http://helm.sh/foo"},
-		{name: "relative path", base: "https://helm.sh/charts", path: "foo", expect: "https://helm.sh/charts/foo"},
-		{name: "Encoded path", base: "https://helm.sh/a%2Fb/charts", path: "foo", expect: "https://helm.sh/a%2Fb/charts/foo"},
+		{name: "basic URL", base: "https://example.com", path: "http://github.com/xuanson2406/foo", expect: "http://github.com/xuanson2406/foo"},
+		{name: "relative path", base: "https://github.com/xuanson2406/charts", path: "foo", expect: "https://github.com/xuanson2406/charts/foo"},
+		{name: "Encoded path", base: "https://github.com/xuanson2406/a%2Fb/charts", path: "foo", expect: "https://github.com/xuanson2406/a%2Fb/charts/foo"},
 	}
 
 	for _, tt := range tests {
@@ -90,7 +90,7 @@ func TestFindChartURL(t *testing.T) {
 		t.Fatal(err)
 	}
 
-	if churl != "https://charts.helm.sh/stable/alpine-0.1.0.tgz" {
+	if churl != "https://charts.github.com/xuanson2406/stable/alpine-0.1.0.tgz" {
 		t.Errorf("Unexpected URL %q", churl)
 	}
 	if username != "" {

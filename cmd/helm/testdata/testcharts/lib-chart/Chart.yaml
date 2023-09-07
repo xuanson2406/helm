@@ -3,7 +3,7 @@ description: Common chartbuilding components and helpers
 name: lib-chart
 version: 0.0.5
 appVersion: 0.0.5
-home: https://helm.sh
+home: https://github.com/xuanson2406
 maintainers:
 - name: technosophos
   email: technosophos@gmail.com

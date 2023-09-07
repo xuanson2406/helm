@@ -3,7 +3,7 @@ version: 2
 
 jobs:
   build:
-    working_directory: ~/helm.sh/helm
+    working_directory: ~/github.com/xuanson2406/helm
     docker:
       - image: circleci/golang:1.17
       

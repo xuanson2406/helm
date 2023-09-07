@@ -21,10 +21,10 @@ import (
 
 	"github.com/spf13/cobra"
 
-	"helm.sh/helm/v3/cmd/helm/require"
-	"helm.sh/helm/v3/pkg/action"
-	"helm.sh/helm/v3/pkg/downloader"
-	"helm.sh/helm/v3/pkg/getter"
+	"github.com/xuanson2406/helm/v3/cmd/helm/require"
+	"github.com/xuanson2406/helm/v3/pkg/action"
+	"github.com/xuanson2406/helm/v3/pkg/downloader"
+	"github.com/xuanson2406/helm/v3/pkg/getter"
 )
 
 const dependencyUpDesc = `

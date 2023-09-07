@@ -741,7 +741,7 @@ metadata:
   annotations:
     "destination": "archive"
     "format": "bio"
-    "helm.sh/hook": "pre-install"
+    "github.com/xuanson2406/hook": "pre-install"
 ---
 metadata:
   name: Zeus
@@ -808,7 +808,7 @@ Example template:
 Example output:
 
 ```yaml
-"helm.sh/hook": "pre-install,post-install"
+"github.com/xuanson2406/hook": "pre-install,post-install"
 ```
 
 ### `common.chartref`

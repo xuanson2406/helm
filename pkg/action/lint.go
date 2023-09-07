@@ -24,9 +24,9 @@ import (
 
 	"github.com/pkg/errors"
 
-	"helm.sh/helm/v3/pkg/chartutil"
-	"helm.sh/helm/v3/pkg/lint"
-	"helm.sh/helm/v3/pkg/lint/support"
+	"github.com/xuanson2406/helm/v3/pkg/chartutil"
+	"github.com/xuanson2406/helm/v3/pkg/lint"
+	"github.com/xuanson2406/helm/v3/pkg/lint/support"
 )
 
 // Lint is the action for checking that the semantics of a chart are well-formed.

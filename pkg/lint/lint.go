@@ -14,13 +14,13 @@ See the License for the specific language governing permissions and
 limitations under the License.
 */
 
-package lint // import "helm.sh/helm/v3/pkg/lint"
+package lint // import "github.com/xuanson2406/helm/v3/pkg/lint"
 
 import (
 	"path/filepath"
 
-	"helm.sh/helm/v3/pkg/lint/rules"
-	"helm.sh/helm/v3/pkg/lint/support"
+	"github.com/xuanson2406/helm/v3/pkg/lint/rules"
+	"github.com/xuanson2406/helm/v3/pkg/lint/support"
 )
 
 // All runs all of the available linters on the given base directory.

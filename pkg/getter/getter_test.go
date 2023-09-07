@@ -18,7 +18,7 @@ package getter
 import (
 	"testing"
 
-	"helm.sh/helm/v3/pkg/cli"
+	"github.com/xuanson2406/helm/v3/pkg/cli"
 )
 
 const pluginDir = "testdata/plugins"

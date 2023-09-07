@@ -22,8 +22,8 @@ import (
 
 	"sigs.k8s.io/yaml"
 
-	"helm.sh/helm/v3/pkg/chartutil"
-	"helm.sh/helm/v3/pkg/release"
+	"github.com/xuanson2406/helm/v3/pkg/chartutil"
+	"github.com/xuanson2406/helm/v3/pkg/release"
 )
 
 func TestSortManifests(t *testing.T) {
@@ -47,7 +47,7 @@ metadata:
   labels:
     doesnot: matter
   annotations:
-    "helm.sh/hook": pre-install
+    "github.com/xuanson2406/hook": pre-install
 `,
 		},
 		{
@@ -60,7 +60,7 @@ apiVersion: v1beta1
 metadata:
   name: second
   annotations:
-    "helm.sh/hook": post-install
+    "github.com/xuanson2406/hook": post-install
 `,
 		}, {
 			name:  []string{"third"},
@@ -72,7 +72,7 @@ apiVersion: v1beta1
 metadata:
   name: third
   annotations:
-    "helm.sh/hook": no-such-hook
+    "github.com/xuanson2406/hook": no-such-hook
 `,
 		}, {
 			name:  []string{"fourth"},
@@ -95,7 +95,7 @@ apiVersion: v1beta1
 metadata:
   name: fifth
   annotations:
-    "helm.sh/hook": post-delete, post-install
+    "github.com/xuanson2406/hook": post-delete, post-install
 `,
 		}, {
 			// Regression test: files with an underscore in the base name should be skipped.
@@ -129,7 +129,7 @@ kind: Pod
 metadata:
   name: example-test
   annotations:
-    "helm.sh/hook": test
+    "github.com/xuanson2406/hook": test
 `,
 		},
 	}

@@ -116,7 +116,7 @@ kind: Service
 metadata:
   labels:
     app.kubernetes.io/name: service
-    helm.sh/chart: service-0.1.0
+    github.com/xuanson2406/chart: service-0.1.0
     app.kubernetes.io/managed-by: Helm
     protocol: mail
     app.kubernetes.io/instance: release-name
@@ -140,7 +140,7 @@ kind: Service
 metadata:
   labels:
     app.kubernetes.io/name: service
-    helm.sh/chart: service-0.1.0
+    github.com/xuanson2406/chart: service-0.1.0
     app.kubernetes.io/managed-by: Helm
     protocol: www
     app.kubernetes.io/instance: release-name
@@ -251,7 +251,7 @@ kind: Deployment
 metadata:
   labels:
     app.kubernetes.io/name: deployment
-    helm.sh/chart: deployment-0.1.0
+    github.com/xuanson2406/chart: deployment-0.1.0
     app.kubernetes.io/managed-by: Helm
     app.kubernetes.io/instance: release-name
   name: release-name-deployment
@@ -317,7 +317,7 @@ kind: ConfigMap
 metadata:
   labels:
     app.kubernetes.io/name: configmap
-    helm.sh/chart: configmap-0.1.0
+    github.com/xuanson2406/chart: configmap-0.1.0
     app.kubernetes.io/managed-by: Helm
     app.kubernetes.io/instance: release-name
   name: release-name-configmap
@@ -355,7 +355,7 @@ kind: Secret
 metadata:
   labels:
     app.kubernetes.io/name: secret
-    helm.sh/chart: secret-0.1.0
+    github.com/xuanson2406/chart: secret-0.1.0
     app.kubernetes.io/managed-by: Helm
     app.kubernetes.io/instance: release-name
   name: release-name-secret
@@ -400,7 +400,7 @@ metadata:
     kubernetes.io/tls-acme: "true"
   labels:
     app.kubernetes.io/name: ingress
-    helm.sh/chart: ingress-0.1.0
+    github.com/xuanson2406/chart: ingress-0.1.0
     app.kubernetes.io/managed-by: Helm
     app.kubernetes.io/instance: release-name
   name: release-name-ingress
@@ -460,7 +460,7 @@ kind: PersistentVolumeClaim
 metadata:
   labels:
     app.kubernetes.io/name: persistentvolumeclaim
-    helm.sh/chart: persistentvolumeclaim-0.1.0
+    github.com/xuanson2406/chart: persistentvolumeclaim-0.1.0
     app.kubernetes.io/managed-by: Helm
     app.kubernetes.io/instance: release-name
   name: release-name-persistentvolumeclaim
@@ -734,14 +734,14 @@ metadata:
     app.kubernetes.io/name: metadata
     app.kubernetes.io/managed-by: "Helm"
     app.kubernetes.io/instance: "release-name"
-    helm.sh/chart: metadata-0.1.0
+    github.com/xuanson2406/chart: metadata-0.1.0
     first: "matt"
     last: "butcher"
     nick: "technosophos"
   annotations:
     "destination": "archive"
     "format": "bio"
-    "helm.sh/hook": "pre-install"
+    "github.com/xuanson2406/hook": "pre-install"
 ---
 metadata:
   name: Zeus
@@ -749,7 +749,7 @@ metadata:
     app.kubernetes.io/name: metadata
     app.kubernetes.io/managed-by: "Helm"
     app.kubernetes.io/instance: "release-name"
-    helm.sh/chart: metadata-0.1.0
+    github.com/xuanson2406/chart: metadata-0.1.0
   annotations:
 ```
 
@@ -792,7 +792,7 @@ Example output:
 app.kubernetes.io/name: labelizer
 app.kubernetes.io/managed-by: "Tiller"
 app.kubernetes.io/instance: "release-name"
-helm.sh/chart: labelizer-0.1.0
+github.com/xuanson2406/chart: labelizer-0.1.0
 ```
 
 ### `common.hook`
@@ -808,7 +808,7 @@ Example template:
 Example output:
 
 ```yaml
-"helm.sh/hook": "pre-install,post-install"
+"github.com/xuanson2406/hook": "pre-install,post-install"
 ```
 
 ### `common.chartref`

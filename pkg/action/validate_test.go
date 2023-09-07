@@ -19,7 +19,7 @@ package action
 import (
 	"testing"
 
-	"helm.sh/helm/v3/pkg/kube"
+	"github.com/xuanson2406/helm/v3/pkg/kube"
 
 	appsv1 "k8s.io/api/apps/v1"
 
@@ -51,21 +51,21 @@ func TestCheckOwnership(t *testing.T) {
 
 	// Verify that a resource that lacks labels/annotations is not owned
 	err := checkOwnership(deployFoo.Object, "rel-a", "ns-a")
-	assert.EqualError(t, err, `invalid ownership metadata; label validation error: missing key "app.kubernetes.io/managed-by": must be set to "Helm"; annotation validation error: missing key "meta.helm.sh/release-name": must be set to "rel-a"; annotation validation error: missing key "meta.helm.sh/release-namespace": must be set to "ns-a"`)
+	assert.EqualError(t, err, `invalid ownership metadata; label validation error: missing key "app.kubernetes.io/managed-by": must be set to "Helm"; annotation validation error: missing key "meta.github.com/xuanson2406/release-name": must be set to "rel-a"; annotation validation error: missing key "meta.github.com/xuanson2406/release-namespace": must be set to "ns-a"`)
 
 	// Set managed by label and verify annotation error message
 	_ = accessor.SetLabels(deployFoo.Object, map[string]string{
 		appManagedByLabel: appManagedByHelm,
 	})
 	err = checkOwnership(deployFoo.Object, "rel-a", "ns-a")
-	assert.EqualError(t, err, `invalid ownership metadata; annotation validation error: missing key "meta.helm.sh/release-name": must be set to "rel-a"; annotation validation error: missing key "meta.helm.sh/release-namespace": must be set to "ns-a"`)
+	assert.EqualError(t, err, `invalid ownership metadata; annotation validation error: missing key "meta.github.com/xuanson2406/release-name": must be set to "rel-a"; annotation validation error: missing key "meta.github.com/xuanson2406/release-namespace": must be set to "ns-a"`)
 
 	// Set only the release name annotation and verify missing release namespace error message
 	_ = accessor.SetAnnotations(deployFoo.Object, map[string]string{
 		helmReleaseNameAnnotation: "rel-a",
 	})
 	err = checkOwnership(deployFoo.Object, "rel-a", "ns-a")
-	assert.EqualError(t, err, `invalid ownership metadata; annotation validation error: missing key "meta.helm.sh/release-namespace": must be set to "ns-a"`)
+	assert.EqualError(t, err, `invalid ownership metadata; annotation validation error: missing key "meta.github.com/xuanson2406/release-namespace": must be set to "ns-a"`)
 
 	// Set both release name and namespace annotations and verify no ownership errors
 	_ = accessor.SetAnnotations(deployFoo.Object, map[string]string{
@@ -77,11 +77,11 @@ func TestCheckOwnership(t *testing.T) {
 
 	// Verify ownership error for wrong release name
 	err = checkOwnership(deployFoo.Object, "rel-b", "ns-a")
-	assert.EqualError(t, err, `invalid ownership metadata; annotation validation error: key "meta.helm.sh/release-name" must equal "rel-b": current value is "rel-a"`)
+	assert.EqualError(t, err, `invalid ownership metadata; annotation validation error: key "meta.github.com/xuanson2406/release-name" must equal "rel-b": current value is "rel-a"`)
 
 	// Verify ownership error for wrong release namespace
 	err = checkOwnership(deployFoo.Object, "rel-a", "ns-b")
-	assert.EqualError(t, err, `invalid ownership metadata; annotation validation error: key "meta.helm.sh/release-namespace" must equal "ns-b": current value is "ns-a"`)
+	assert.EqualError(t, err, `invalid ownership metadata; annotation validation error: key "meta.github.com/xuanson2406/release-namespace" must equal "ns-b": current value is "ns-a"`)
 
 	// Verify ownership error for wrong manager label
 	_ = accessor.SetLabels(deployFoo.Object, map[string]string{

@@ -3,7 +3,7 @@ entries:
   foo:
     - name: foo
       description: Foo Chart
-      home: https://helm.sh/helm
+      home: https://github.com/xuanson2406/helm
       keywords: []
       maintainers: []
       sources:

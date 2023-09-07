@@ -14,7 +14,7 @@ See the License for the specific language governing permissions and
 limitations under the License.
 */
 
-package main // import "helm.sh/helm/v3/cmd/helm"
+package main // import "github.com/xuanson2406/helm/v3/cmd/helm"
 
 import (
 	"context"
@@ -29,9 +29,9 @@ import (
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 	"k8s.io/client-go/tools/clientcmd"
 
-	"helm.sh/helm/v3/pkg/action"
-	"helm.sh/helm/v3/pkg/registry"
-	"helm.sh/helm/v3/pkg/repo"
+	"github.com/xuanson2406/helm/v3/pkg/action"
+	"github.com/xuanson2406/helm/v3/pkg/registry"
+	"github.com/xuanson2406/helm/v3/pkg/repo"
 )
 
 var globalUsage = `The Kubernetes package manager
@@ -220,12 +220,12 @@ func checkForExpiredRepos(repofile string) {
 		{
 			name: "stable",
 			old:  "kubernetes-charts.storage.googleapis.com",
-			new:  "https://charts.helm.sh/stable",
+			new:  "https://charts.github.com/xuanson2406/stable",
 		},
 		{
 			name: "incubator",
 			old:  "kubernetes-charts-incubator.storage.googleapis.com",
-			new:  "https://charts.helm.sh/incubator",
+			new:  "https://charts.github.com/xuanson2406/incubator",
 		},
 	}
 

@@ -14,7 +14,7 @@ See the License for the specific language governing permissions and
 limitations under the License.
 */
 
-package releaseutil // import "helm.sh/helm/v3/pkg/releaseutil"
+package releaseutil // import "github.com/xuanson2406/helm/v3/pkg/releaseutil"
 
 import (
 	"reflect"
@@ -29,7 +29,7 @@ kind: Pod
 metadata:
   name: finding-nemo,
   annotations:
-    "helm.sh/hook": test
+    "github.com/xuanson2406/hook": test
 spec:
   containers:
   - name: nemo-test
@@ -42,7 +42,7 @@ kind: Pod
 metadata:
   name: finding-nemo,
   annotations:
-    "helm.sh/hook": test
+    "github.com/xuanson2406/hook": test
 spec:
   containers:
   - name: nemo-test

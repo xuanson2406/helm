@@ -3,7 +3,7 @@ kind: Service
 metadata:
   name: {{ .Chart.Name }}
   labels:
-    helm.sh/chart: "{{ .Chart.Name }}-{{ .Chart.Version }}"
+    github.com/xuanson2406/chart: "{{ .Chart.Name }}-{{ .Chart.Version }}"
     app.kubernetes.io/instance: "{{ .Release.Name }}"
     kube-version/major: "{{ .Capabilities.KubeVersion.Major }}"
     kube-version/minor: "{{ .Capabilities.KubeVersion.Minor }}"

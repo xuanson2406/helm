@@ -40,9 +40,9 @@ const (
 	testPubfile = "testdata/helm-test-key.pub"
 
 	// Generated name for the PGP key in testKeyFile.
-	testKeyName = `Helm Testing (This key should only be used for testing. DO NOT TRUST.) <helm-testing@helm.sh>`
+	testKeyName = `Helm Testing (This key should only be used for testing. DO NOT TRUST.) <helm-testing@github.com/xuanson2406>`
 
-	testPasswordKeyName = `password key (fake) <fake@helm.sh>`
+	testPasswordKeyName = `password key (fake) <fake@github.com/xuanson2406>`
 
 	testChartfile = "testdata/hashtest-1.2.3.tgz"
 

@@ -2,11 +2,11 @@ apiVersion: v1
 entries:
   alpine:
     - name: alpine
-      url: https://charts.helm.sh/stable/alpine-0.1.0.tgz
+      url: https://charts.github.com/xuanson2406/stable/alpine-0.1.0.tgz
       checksum: 0e6661f193211d7a5206918d42f5c2a9470b737d
       created: "2018-06-27T10:00:18.230700509Z"
       deprecated: true
-      home: https://helm.sh/helm
+      home: https://github.com/xuanson2406/helm
       sources:
         - https://github.com/helm/helm
       version: 0.1.0
@@ -17,10 +17,10 @@ entries:
       icon: ""
       apiVersion: v2
     - name: alpine
-      url: https://charts.helm.sh/stable/alpine-0.2.0.tgz
+      url: https://charts.github.com/xuanson2406/stable/alpine-0.2.0.tgz
       checksum: 0e6661f193211d7a5206918d42f5c2a9470b737d
       created: "2018-07-09T11:34:37.797864902Z"
-      home: https://helm.sh/helm
+      home: https://github.com/xuanson2406/helm
       sources:
         - https://github.com/helm/helm
       version: 0.2.0
@@ -31,10 +31,10 @@ entries:
       icon: ""
       apiVersion: v2
     - name: alpine
-      url: https://charts.helm.sh/stable/alpine-0.3.0-rc.1.tgz
+      url: https://charts.github.com/xuanson2406/stable/alpine-0.3.0-rc.1.tgz
       checksum: 0e6661f193211d7a5206918d42f5c2a9470b737d
       created: "2020-11-12T08:44:58.872726222Z"
-      home: https://helm.sh/helm
+      home: https://github.com/xuanson2406/helm
       sources:
         - https://github.com/helm/helm
       version: 0.3.0-rc.1
@@ -46,7 +46,7 @@ entries:
       apiVersion: v2
   mariadb:
     - name: mariadb
-      url: https://charts.helm.sh/stable/mariadb-0.3.0.tgz
+      url: https://charts.github.com/xuanson2406/stable/mariadb-0.3.0.tgz
       checksum: 65229f6de44a2be9f215d11dbff311673fc8ba56
       created: "2018-04-23T08:20:27.160959131Z"
       home: https://mariadb.org

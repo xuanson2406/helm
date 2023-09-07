@@ -28,8 +28,8 @@ import (
 	"github.com/pkg/errors"
 	"sigs.k8s.io/yaml"
 
-	"helm.sh/helm/v3/pkg/chart"
-	"helm.sh/helm/v3/pkg/chart/loader"
+	"github.com/xuanson2406/helm/v3/pkg/chart"
+	"github.com/xuanson2406/helm/v3/pkg/chart/loader"
 )
 
 // chartName is a regular expression for testing the supplied name of a chart.
@@ -459,7 +459,7 @@ Create chart name and version as used by the chart label.
 Common labels
 */}}
 {{- define "<CHARTNAME>.labels" -}}
-helm.sh/chart: {{ include "<CHARTNAME>.chart" . }}
+github.com/xuanson2406/chart: {{ include "<CHARTNAME>.chart" . }}
 {{ include "<CHARTNAME>.selectorLabels" . }}
 {{- if .Chart.AppVersion }}
 app.kubernetes.io/version: {{ .Chart.AppVersion | quote }}
@@ -494,7 +494,7 @@ metadata:
   labels:
     {{- include "<CHARTNAME>.labels" . | nindent 4 }}
   annotations:
-    "helm.sh/hook": test
+    "github.com/xuanson2406/hook": test
 spec:
   containers:
     - name: wget

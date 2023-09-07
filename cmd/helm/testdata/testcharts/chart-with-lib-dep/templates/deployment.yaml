@@ -4,7 +4,7 @@ metadata:
   name: {{ template "chart-with-lib-dep.fullname" . }}
   labels:
     app.kubernetes.io/name: {{ template "chart-with-lib-dep.name" . }}
-    helm.sh/chart: {{ template "chart-with-lib-dep.chart" . }}
+    github.com/xuanson2406/chart: {{ template "chart-with-lib-dep.chart" . }}
     app.kubernetes.io/instance: {{ .Release.Name }}
     app.kubernetes.io/managed-by: {{ .Release.Service }}
 spec:

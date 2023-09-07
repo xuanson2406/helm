@@ -20,9 +20,9 @@ import (
 	"testing"
 	"time"
 
-	"helm.sh/helm/v3/pkg/chart"
-	"helm.sh/helm/v3/pkg/release"
-	helmtime "helm.sh/helm/v3/pkg/time"
+	"github.com/xuanson2406/helm/v3/pkg/chart"
+	"github.com/xuanson2406/helm/v3/pkg/release"
+	helmtime "github.com/xuanson2406/helm/v3/pkg/time"
 )
 
 func TestStatusCmd(t *testing.T) {

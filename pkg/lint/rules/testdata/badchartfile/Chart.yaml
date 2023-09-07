@@ -5,7 +5,7 @@ type: application
 dependencies:
 - name: mariadb
   version: 5.x.x
-  repository: https://charts.helm.sh/stable/
+  repository: https://charts.github.com/xuanson2406/stable/
   condition: mariadb.enabled
   tags:
     - database

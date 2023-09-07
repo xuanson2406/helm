@@ -33,10 +33,10 @@ import (
 	"k8s.io/apimachinery/pkg/util/validation/field"
 	"k8s.io/apimachinery/pkg/util/yaml"
 
-	"helm.sh/helm/v3/pkg/chart/loader"
-	"helm.sh/helm/v3/pkg/chartutil"
-	"helm.sh/helm/v3/pkg/engine"
-	"helm.sh/helm/v3/pkg/lint/support"
+	"github.com/xuanson2406/helm/v3/pkg/chart/loader"
+	"github.com/xuanson2406/helm/v3/pkg/chartutil"
+	"github.com/xuanson2406/helm/v3/pkg/engine"
+	"github.com/xuanson2406/helm/v3/pkg/lint/support"
 )
 
 var (
@@ -315,8 +315,8 @@ func validateListAnnotations(yamlStruct *K8sYamlStruct, manifest string) error {
 		}
 
 		for _, i := range m.Items {
-			if _, ok := i.Metadata.Annotations["helm.sh/resource-policy"]; ok {
-				return errors.New("Annotation 'helm.sh/resource-policy' within List objects are ignored")
+			if _, ok := i.Metadata.Annotations["github.com/xuanson2406/resource-policy"]; ok {
+				return errors.New("Annotation 'github.com/xuanson2406/resource-policy' within List objects are ignored")
 			}
 		}
 	}

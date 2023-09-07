@@ -13,7 +13,7 @@ See the License for the specific language governing permissions and
 limitations under the License.
 */
 
-package installer // import "helm.sh/helm/v3/pkg/plugin/installer"
+package installer // import "github.com/xuanson2406/helm/v3/pkg/plugin/installer"
 
 import (
 	"archive/tar"
@@ -32,9 +32,9 @@ import (
 
 	"github.com/pkg/errors"
 
-	"helm.sh/helm/v3/internal/test/ensure"
-	"helm.sh/helm/v3/pkg/getter"
-	"helm.sh/helm/v3/pkg/helmpath"
+	"github.com/xuanson2406/helm/v3/internal/test/ensure"
+	"github.com/xuanson2406/helm/v3/pkg/getter"
+	"github.com/xuanson2406/helm/v3/pkg/helmpath"
 )
 
 var _ Installer = new(HTTPInstaller)

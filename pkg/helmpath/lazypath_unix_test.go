@@ -23,7 +23,7 @@ import (
 
 	"k8s.io/client-go/util/homedir"
 
-	"helm.sh/helm/v3/pkg/helmpath/xdg"
+	"github.com/xuanson2406/helm/v3/pkg/helmpath/xdg"
 )
 
 const (

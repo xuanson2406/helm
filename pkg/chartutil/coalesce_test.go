@@ -23,7 +23,7 @@ import (
 
 	"github.com/stretchr/testify/assert"
 
-	"helm.sh/helm/v3/pkg/chart"
+	"github.com/xuanson2406/helm/v3/pkg/chart"
 )
 
 // ref: http://www.yaml.org/spec/1.2/spec.html#id2803362

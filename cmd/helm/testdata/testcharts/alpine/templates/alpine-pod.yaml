@@ -13,7 +13,7 @@ metadata:
     app.kubernetes.io/instance: {{.Release.Name | quote }}
     app.kubernetes.io/version: {{ .Chart.AppVersion }}
     # This makes it easy to audit chart usage.
-    helm.sh/chart: "{{.Chart.Name}}-{{.Chart.Version}}"
+    github.com/xuanson2406/chart: "{{.Chart.Name}}-{{.Chart.Version}}"
     values: {{.Values.Name}}
 spec:
   # This shows how to use a simple value. This will look for a passed-in value

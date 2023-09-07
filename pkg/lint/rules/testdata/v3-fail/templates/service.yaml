@@ -3,7 +3,7 @@ kind: Service
 metadata:
   name: {{ include "v3-fail.fullname" . }}
   annotations:
-    helm.sh/hook: crd-install
+    github.com/xuanson2406/hook: crd-install
   labels:
     {{- include "v3-fail.labels" . | nindent 4 }}
 spec:

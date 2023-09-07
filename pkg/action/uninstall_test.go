@@ -22,8 +22,8 @@ import (
 
 	"github.com/stretchr/testify/assert"
 
-	kubefake "helm.sh/helm/v3/pkg/kube/fake"
-	"helm.sh/helm/v3/pkg/release"
+	kubefake "github.com/xuanson2406/helm/v3/pkg/kube/fake"
+	"github.com/xuanson2406/helm/v3/pkg/release"
 )
 
 func uninstallAction(t *testing.T) *Uninstall {
@@ -48,7 +48,7 @@ func TestUninstallRelease_deleteRelease(t *testing.T) {
 		"metadata": {
 		  "name": "secret",
 		  "annotations": {
-			"helm.sh/resource-policy": "keep"
+			"github.com/xuanson2406/resource-policy": "keep"
 		  }
 		},
 		"type": "Opaque",

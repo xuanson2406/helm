@@ -182,7 +182,7 @@ apiVersion: networking.k8s.io/v1
 kind: NetworkPolicy
 metadata:
   annotations:
-    "helm.sh/hook": pre-install
+    "github.com/xuanson2406/hook": pre-install
   name: sixth
 spec:
   podSelector: {}

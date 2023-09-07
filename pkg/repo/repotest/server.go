@@ -34,12 +34,12 @@ import (
 	"golang.org/x/crypto/bcrypt"
 	"sigs.k8s.io/yaml"
 
-	"helm.sh/helm/v3/internal/tlsutil"
-	"helm.sh/helm/v3/pkg/chart"
-	"helm.sh/helm/v3/pkg/chart/loader"
-	"helm.sh/helm/v3/pkg/chartutil"
-	ociRegistry "helm.sh/helm/v3/pkg/registry"
-	"helm.sh/helm/v3/pkg/repo"
+	"github.com/xuanson2406/helm/v3/internal/tlsutil"
+	"github.com/xuanson2406/helm/v3/pkg/chart"
+	"github.com/xuanson2406/helm/v3/pkg/chart/loader"
+	"github.com/xuanson2406/helm/v3/pkg/chartutil"
+	ociRegistry "github.com/xuanson2406/helm/v3/pkg/registry"
+	"github.com/xuanson2406/helm/v3/pkg/repo"
 )
 
 // NewTempServerWithCleanup creates a server inside of a temp dir.
@@ -371,7 +371,7 @@ func (s *Server) StartTLS() {
 		panic(err)
 	}
 	tlsConf.BuildNameToCertificate()
-	tlsConf.ServerName = "helm.sh"
+	tlsConf.ServerName = "github.com/xuanson2406"
 	s.srv.TLS = tlsConf
 	s.srv.StartTLS()
 
@@ -400,6 +400,7 @@ func (s *Server) Stop() {
 // URL returns the URL of the server.
 //
 // Example:
+//
 //	http://localhost:1776
 func (s *Server) URL() string {
 	return s.srv.URL

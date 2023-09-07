@@ -25,8 +25,8 @@ import (
 	"github.com/pkg/errors"
 	"github.com/spf13/cobra"
 
-	"helm.sh/helm/v3/internal/monocular"
-	"helm.sh/helm/v3/pkg/cli/output"
+	"github.com/xuanson2406/helm/v3/internal/monocular"
+	"github.com/xuanson2406/helm/v3/pkg/cli/output"
 )
 
 const searchHubDesc = `
@@ -69,7 +69,7 @@ func newSearchHubCmd(out io.Writer) *cobra.Command {
 	}
 
 	f := cmd.Flags()
-	f.StringVar(&o.searchEndpoint, "endpoint", "https://hub.helm.sh", "Hub instance to query for charts")
+	f.StringVar(&o.searchEndpoint, "endpoint", "https://hub.github.com/xuanson2406", "Hub instance to query for charts")
 	f.UintVar(&o.maxColWidth, "max-col-width", 50, "maximum column width for output table")
 	f.BoolVar(&o.listRepoURL, "list-repo-url", false, "print charts repository URL")
 

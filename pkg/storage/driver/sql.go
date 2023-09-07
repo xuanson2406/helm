@@ -14,7 +14,7 @@ See the License for the specific language governing permissions and
 limitations under the License.
 */
 
-package driver // import "helm.sh/helm/v3/pkg/storage/driver"
+package driver // import "github.com/xuanson2406/helm/v3/pkg/storage/driver"
 
 import (
 	"fmt"
@@ -29,7 +29,7 @@ import (
 	// Import pq for postgres dialect
 	_ "github.com/lib/pq"
 
-	rspb "helm.sh/helm/v3/pkg/release"
+	rspb "github.com/xuanson2406/helm/v3/pkg/release"
 )
 
 var _ Driver = (*SQL)(nil)
@@ -65,7 +65,7 @@ const (
 
 const (
 	sqlReleaseDefaultOwner = "helm"
-	sqlReleaseDefaultType  = "helm.sh/release.v1"
+	sqlReleaseDefaultType  = "github.com/xuanson2406/release.v1"
 )
 
 // SQL is the sql storage driver implementation.

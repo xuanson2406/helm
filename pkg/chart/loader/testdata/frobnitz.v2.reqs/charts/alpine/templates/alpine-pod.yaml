@@ -5,7 +5,7 @@ metadata:
   labels:
     app.kubernetes.io/managed-by: {{.Release.Service}}
     app.kubernetes.io/name: {{.Chart.Name}}
-    helm.sh/chart: "{{.Chart.Name}}-{{.Chart.Version}}"
+    github.com/xuanson2406/chart: "{{.Chart.Name}}-{{.Chart.Version}}"
 spec:
   restartPolicy: {{default "Never" .restart_policy}}
   containers:

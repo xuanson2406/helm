@@ -14,13 +14,14 @@ See the License for the specific language governing permissions and
 limitations under the License.
 */
 
-package kube // import "helm.sh/helm/v3/pkg/kube"
+package kube // import "github.com/xuanson2406/helm/v3/pkg/kube"
 
 // ResourcePolicyAnno is the annotation name for a resource policy
-const ResourcePolicyAnno = "helm.sh/resource-policy"
+const ResourcePolicyAnno = "github.com/xuanson2406/resource-policy"
 
 // KeepPolicy is the resource policy type for keep
 //
 // This resource policy type allows resources to skip being deleted
-//   during an uninstallRelease action.
+//
+//	during an uninstallRelease action.
 const KeepPolicy = "keep"

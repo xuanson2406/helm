@@ -26,7 +26,7 @@ import (
 	"github.com/spf13/cobra"
 	"github.com/spf13/cobra/doc"
 
-	"helm.sh/helm/v3/cmd/helm/require"
+	"github.com/xuanson2406/helm/v3/cmd/helm/require"
 )
 
 const docsDesc = `

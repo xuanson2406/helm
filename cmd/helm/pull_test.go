@@ -24,7 +24,7 @@ import (
 	"path/filepath"
 	"testing"
 
-	"helm.sh/helm/v3/pkg/repo/repotest"
+	"github.com/xuanson2406/helm/v3/pkg/repo/repotest"
 )
 
 func TestPullCmd(t *testing.T) {
@@ -44,7 +44,7 @@ func TestPullCmd(t *testing.T) {
 		t.Fatal(err)
 	}
 
-	helmTestKeyOut := "Signed by: Helm Testing (This key should only be used for testing. DO NOT TRUST.) <helm-testing@helm.sh>\n" +
+	helmTestKeyOut := "Signed by: Helm Testing (This key should only be used for testing. DO NOT TRUST.) <helm-testing@github.com/xuanson2406>\n" +
 		"Using Key With Fingerprint: 5E615389B53CA37F0EE60BD3843BBF981FC18762\n" +
 		"Chart Hash Verified: "
 

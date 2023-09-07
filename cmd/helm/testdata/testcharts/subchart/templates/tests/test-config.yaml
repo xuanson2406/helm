@@ -3,6 +3,6 @@ kind: ConfigMap
 metadata:
   name: "{{ .Release.Name }}-testconfig"
   annotations:
-    "helm.sh/hook": test
+    "github.com/xuanson2406/hook": test
 data:
   message: Hello World

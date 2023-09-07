@@ -146,7 +146,7 @@ issues will be accepted.
 12 months after Helm 3.0.0's public release, support for Helm 2 will formally end. Download links
 for the Helm 2 client through Google Cloud Storage, the Docker image for Tiller stored in Google
 Container Registry, and the Google Cloud buckets for the stable and incubator chart repositories may
-no longer work at any point. Client downloads through `get.helm.sh` will continue to work, and we
+no longer work at any point. Client downloads through `get.github.com/xuanson2406` will continue to work, and we
 will distribute a Tiller image that will be made available at an alternative location which can be
 updated with `helm init --tiller-image`.
 
@@ -220,7 +220,7 @@ HIPs are submitted to the [helm/community repository](https://github.com/helm/co
 HIP as well as the review process.
 
 After your proposal has been approved, follow the [developer's
-guide](https://helm.sh/docs/community/developers/) to get started.
+guide](https://github.com/xuanson2406/docs/community/developers/) to get started.
 
 ## How to Contribute a Patch
 
@@ -230,7 +230,7 @@ guide](https://helm.sh/docs/community/developers/) to get started.
 3. Submit a pull request, making sure to sign your work and link the related issue.
 
 Coding conventions and standards are explained in the [official developer
-docs](https://helm.sh/docs/developers/).
+docs](https://github.com/xuanson2406/docs/developers/).
 
 ## Pull Requests
 

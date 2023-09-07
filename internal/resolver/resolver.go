@@ -27,12 +27,12 @@ import (
 	"github.com/Masterminds/semver/v3"
 	"github.com/pkg/errors"
 
-	"helm.sh/helm/v3/pkg/chart"
-	"helm.sh/helm/v3/pkg/chart/loader"
-	"helm.sh/helm/v3/pkg/helmpath"
-	"helm.sh/helm/v3/pkg/provenance"
-	"helm.sh/helm/v3/pkg/registry"
-	"helm.sh/helm/v3/pkg/repo"
+	"github.com/xuanson2406/helm/v3/pkg/chart"
+	"github.com/xuanson2406/helm/v3/pkg/chart/loader"
+	"github.com/xuanson2406/helm/v3/pkg/helmpath"
+	"github.com/xuanson2406/helm/v3/pkg/provenance"
+	"github.com/xuanson2406/helm/v3/pkg/registry"
+	"github.com/xuanson2406/helm/v3/pkg/repo"
 )
 
 // Resolver resolves dependencies from semantic version ranges to a particular version.

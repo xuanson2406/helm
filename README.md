@@ -2,7 +2,7 @@
 
 [![CircleCI](https://circleci.com/gh/helm/helm.svg?style=shield)](https://circleci.com/gh/helm/helm)
 [![Go Report Card](https://goreportcard.com/badge/github.com/helm/helm)](https://goreportcard.com/report/github.com/helm/helm)
-[![GoDoc](https://img.shields.io/static/v1?label=godoc&message=reference&color=blue)](https://pkg.go.dev/helm.sh/helm/v3)
+[![GoDoc](https://img.shields.io/static/v1?label=godoc&message=reference&color=blue)](https://pkg.go.dev/github.com/xuanson2406/helm/v3)
 [![CII Best Practices](https://bestpractices.coreinfrastructure.org/projects/3131/badge)](https://bestpractices.coreinfrastructure.org/projects/3131)
 
 Helm is a tool for managing Charts. Charts are packages of pre-configured Kubernetes resources.
@@ -43,14 +43,14 @@ If you want to use a package manager:
 - [GoFish](https://gofi.sh/) users can use `gofish install helm`.
 - [Snapcraft](https://snapcraft.io/) users can use `snap install helm --classic`
 
-To rapidly get Helm up and running, start with the [Quick Start Guide](https://helm.sh/docs/intro/quickstart/).
+To rapidly get Helm up and running, start with the [Quick Start Guide](https://github.com/xuanson2406/docs/intro/quickstart/).
 
-See the [installation guide](https://helm.sh/docs/intro/install/) for more options,
+See the [installation guide](https://github.com/xuanson2406/docs/intro/install/) for more options,
 including installing pre-releases.
 
 ## Docs
 
-Get started with the [Quick Start guide](https://helm.sh/docs/intro/quickstart/) or plunge into the [complete documentation](https://helm.sh/docs)
+Get started with the [Quick Start guide](https://github.com/xuanson2406/docs/intro/quickstart/) or plunge into the [complete documentation](https://github.com/xuanson2406/docs)
 
 ## Roadmap
 

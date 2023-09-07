@@ -38,20 +38,20 @@ import (
 	"k8s.io/cli-runtime/pkg/resource"
 	"sigs.k8s.io/yaml"
 
-	"helm.sh/helm/v3/pkg/chart"
-	"helm.sh/helm/v3/pkg/chartutil"
-	"helm.sh/helm/v3/pkg/cli"
-	"helm.sh/helm/v3/pkg/downloader"
-	"helm.sh/helm/v3/pkg/getter"
-	"helm.sh/helm/v3/pkg/kube"
-	kubefake "helm.sh/helm/v3/pkg/kube/fake"
-	"helm.sh/helm/v3/pkg/postrender"
-	"helm.sh/helm/v3/pkg/registry"
-	"helm.sh/helm/v3/pkg/release"
-	"helm.sh/helm/v3/pkg/releaseutil"
-	"helm.sh/helm/v3/pkg/repo"
-	"helm.sh/helm/v3/pkg/storage"
-	"helm.sh/helm/v3/pkg/storage/driver"
+	"github.com/xuanson2406/helm/v3/pkg/chart"
+	"github.com/xuanson2406/helm/v3/pkg/chartutil"
+	"github.com/xuanson2406/helm/v3/pkg/cli"
+	"github.com/xuanson2406/helm/v3/pkg/downloader"
+	"github.com/xuanson2406/helm/v3/pkg/getter"
+	"github.com/xuanson2406/helm/v3/pkg/kube"
+	kubefake "github.com/xuanson2406/helm/v3/pkg/kube/fake"
+	"github.com/xuanson2406/helm/v3/pkg/postrender"
+	"github.com/xuanson2406/helm/v3/pkg/registry"
+	"github.com/xuanson2406/helm/v3/pkg/release"
+	"github.com/xuanson2406/helm/v3/pkg/releaseutil"
+	"github.com/xuanson2406/helm/v3/pkg/repo"
+	"github.com/xuanson2406/helm/v3/pkg/storage"
+	"github.com/xuanson2406/helm/v3/pkg/storage/driver"
 )
 
 // NOTESFILE_SUFFIX that we want to treat special. It goes through the templating engine
@@ -456,10 +456,10 @@ func (i *Install) failRelease(rel *release.Release, err error) (*release.Release
 //
 // Roughly, this will return an error if name is
 //
-//	- empty
-//	- too long
-//	- already in use, and not deleted
-//	- used by a deleted release, and i.Replace is false
+//   - empty
+//   - too long
+//   - already in use, and not deleted
+//   - used by a deleted release, and i.Replace is false
 func (i *Install) availableName() error {
 	start := i.ReleaseName
 

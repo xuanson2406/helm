@@ -3,7 +3,7 @@ kind: Pod
 metadata:
   name: "{{ template "mariadb.fullname" . }}-test-{{ randAlphaNum 5 | lower }}"
   annotations:
-    "helm.sh/hook": test-success
+    "github.com/xuanson2406/hook": test-success
 spec:
   initContainers:
     - name: "test-framework"
