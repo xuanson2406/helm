@@ -315,8 +315,8 @@ func validateListAnnotations(yamlStruct *K8sYamlStruct, manifest string) error {
 		}
 
 		for _, i := range m.Items {
-			if _, ok := i.Metadata.Annotations["github.com/xuanson2406/resource-policy"]; ok {
-				return errors.New("Annotation 'github.com/xuanson2406/resource-policy' within List objects are ignored")
+			if _, ok := i.Metadata.Annotations["helm.sh/resource-policy"]; ok {
+				return errors.New("Annotation 'helm.sh/resource-policy' within List objects are ignored")
 			}
 		}
 	}

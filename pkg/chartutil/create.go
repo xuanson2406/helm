@@ -494,7 +494,7 @@ metadata:
   labels:
     {{- include "<CHARTNAME>.labels" . | nindent 4 }}
   annotations:
-    "github.com/xuanson2406/hook": test
+    "meta.helm.sh/hook": test
 spec:
   containers:
     - name: wget

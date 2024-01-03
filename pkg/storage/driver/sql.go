@@ -65,7 +65,7 @@ const (
 
 const (
 	sqlReleaseDefaultOwner = "helm"
-	sqlReleaseDefaultType  = "github.com/xuanson2406/release.v1"
+	sqlReleaseDefaultType  = "helm.sh/release.v1"
 )
 
 // SQL is the sql storage driver implementation.

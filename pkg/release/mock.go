@@ -29,7 +29,7 @@ var MockHookTemplate = `apiVersion: v1
 kind: Job
 metadata:
   annotations:
-    "github.com/xuanson2406/hook": pre-install
+    "helm.sh/hook": pre-install
 `
 
 // MockManifest is the manifest used for all mock release objects.

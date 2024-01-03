@@ -17,7 +17,7 @@ limitations under the License.
 package kube // import "github.com/xuanson2406/helm/v3/pkg/kube"
 
 // ResourcePolicyAnno is the annotation name for a resource policy
-const ResourcePolicyAnno = "github.com/xuanson2406/resource-policy"
+const ResourcePolicyAnno = "helm.sh/resource-policy"
 
 // KeepPolicy is the resource policy type for keep
 //
